@@ -245,7 +245,6 @@ def get_account():
 
 gl_info = "快去手动填写！"
 if __name__ == '__main__':
-    print(sys.argv[0])
     uid, psw, IYUU_TOKE = get_account()
     if IYUU_TOKE: #有token则通知，无token不通知
         if len(IYUU_TOKE) != 3:
